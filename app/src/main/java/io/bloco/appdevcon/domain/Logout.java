@@ -13,7 +13,9 @@ public class Logout {
   private final ArtistRepository artistRepository;
   private final TrackRepository trackRepository;
 
-  @Inject public Logout(UserRepository userRepository, ArtistRepository artistRepository,
+  @Inject public Logout(
+      UserRepository userRepository,
+      ArtistRepository artistRepository,
       TrackRepository trackRepository) {
     this.userRepository = userRepository;
     this.artistRepository = artistRepository;

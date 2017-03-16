@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import com.google.gson.Gson;
 import dagger.Component;
 import io.bloco.appdevcon.data.ArtistRepository;
+import io.bloco.appdevcon.data.TrackRepository;
 import io.bloco.appdevcon.data.UserRepository;
 import io.bloco.appdevcon.domain.Logout;
 
@@ -25,4 +26,6 @@ public interface ApplicationComponent {
   Gson gson();
 
   SQLiteDatabase db();
+
+  TrackRepository trackRepository();
 }

@@ -5,7 +5,8 @@ import io.bloco.appdevcon.data.model.User;
 public class UserFactory extends BaseFactory<User> {
 
   @Override public User build() {
-    // TODO
-    return null;
+    User user = new User();
+    user.setName(faker.internet.userName());
+    return user;
   }
 }

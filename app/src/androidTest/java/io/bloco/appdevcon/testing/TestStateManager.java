@@ -15,12 +15,13 @@ public class TestStateManager {
   }
 
   public User login() {
-    // TODO
-    throw new UnsupportedOperationException();
+    User user = new User();
+    user.setName("Sérgio Santos");
+    applicationComponent.userRepository().set(user);
+    return user;
   }
 
   public void logout() {
-    // TODO
-    throw new UnsupportedOperationException();
+    applicationComponent.logout().logout();
   }
 }
